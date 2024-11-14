@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #171717;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-8.0" layoutY="-12.0" prefHeight="207.0" prefWidth="614.0">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="543.0" layoutX="35.0" layoutY="27.0" opacity="0.35">
+               <image>
+                  <Image url="@../../../../Downloads/One-Piece-Wallpapers-4.jpg" />
+               </image>
+               <effect>
+                  <GaussianBlur radius="5.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="20.0" prefHeight="54.0" prefWidth="236.0" text="AniRewards">
+         <font>
+            <Font name="Tahoma Bold" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.894886320287531" endY="0.7992424260486256" startY="0.6628788023283987">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.33512786002691786">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.45625841184387594">
+                     <color>
+                        <Color red="0.550000011920929" green="0.9175000190734863" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.550000011920929" green="0.9175000190734863" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow height="0.0" offsetX="2.0" offsetY="2.0" radius="0.0" spread="0.3" width="0.0" />
+         </effect>
+      </Label>
+      <Label layoutX="175.0" layoutY="258.0" text="Best anime of the year" textFill="WHITE">
+         <font>
+            <Font name="Tahoma Bold" size="12.0" />
+         </font>
+      </Label>
+      <RadioButton id="radioButton1" fx:id="opmButton" layoutX="175.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#onClicked" prefHeight="18.0" prefWidth="115.0" text="One punch man" textFill="WHITE" />
+      <RadioButton id="radioButton2" fx:id="jjkButton" layoutX="176.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#onClicked" prefHeight="18.0" prefWidth="110.0" text="Jujutsu Kaisen" textFill="WHITE" />
+      <RadioButton id="radioButton3" fx:id="dsButton" layoutX="176.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#onClicked" text="Demon Slayer" textFill="WHITE" />
+      <Label layoutX="175.0" layoutY="195.0" prefHeight="18.0" prefWidth="79.0" text="Best character" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <TextField id="textField1" fx:id="textField" layoutX="175.0" layoutY="219.0" onMouseClicked="#onClicked" promptText="Enter character name..." />
+      <CheckBox id="Checkbox1" fx:id="Checkbox1" layoutX="31.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#onClicked" text="Male" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="193.0" prefHeight="18.0" prefWidth="119.0" text="What is your gender?" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox id="Checkbox2" fx:id="Checkbox2" layoutX="31.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#onClicked" text="Female" textFill="WHITE" />
+      <Button layoutX="338.0" layoutY="234.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="62.0">
+         <graphic>
+            <ImageView id="button1" fx:id="onePieceButton" fitHeight="57.0" fitWidth="57.0" onMouseClicked="#onClicked">
+               <image>
+                  <Image url="@../../../../Downloads/anime+pfp+luffy-8.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="394.0" layoutY="195.0" prefHeight="18.0" prefWidth="136.0" text="Best anime of the decade" textFill="WHITE">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="423.0" layoutY="233.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="73.0">
+         <graphic>
+            <ImageView id="button2" fx:id="aotButton" fitHeight="57.0" fitWidth="63.0" onMouseClicked="#onClicked">
+               <image>
+                  <Image url="@../../../../Downloads/AOT.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="513.0" layoutY="233.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="73.0">
+         <graphic>
+            <ImageView id="button3" fx:id="dbButton" fitHeight="60.0" fitWidth="59.0" onMouseClicked="#onClicked">
+               <image>
+                  <Image url="@../../../../Downloads/DRAGONBALL.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="348.0" layoutY="305.0" text="One Piece" textFill="WHITE" />
+      <Label layoutX="420.0" layoutY="304.0" text="Attack on Titan" textFill="WHITE" />
+      <Label layoutX="518.0" layoutY="304.0" text="Dragonball" textFill="WHITE" />
+   </children>
+</AnchorPane>
